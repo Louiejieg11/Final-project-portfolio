@@ -1,14 +1,19 @@
 .nav-link:hover {
     color: #FFFFFF !important;
 }
+.img-thumbnail{
+    box-shadow: 10px 10px 196px -54px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 196px -54px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 196px -54px rgba(0,0,0,0.75);
+}
 
 .jumbotron {
     padding-top: 6rem;
-    background-color: #E2EDFF;
+    background-color: #075a83;
 }
 
 #projects {
-    background-color: #E2EDFF;
+    background-color: #023047;
 }
 
 section {
