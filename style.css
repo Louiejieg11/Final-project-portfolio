@@ -46,3 +46,10 @@ footer a:hover {
     text-decoration: none;
     padding: 0px 3px 0px 3px;
 }
+.card img:hover{
+    border-radius: 72% 28% 50% 50% / 39% 63% 37% 61% ;
+    box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
+   transform: scale(1.1);
+}
