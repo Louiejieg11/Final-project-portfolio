@@ -14,12 +14,14 @@
     <!-- Google Font API -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 
     <!-- Custom CSS ddd -->
     <link rel="stylesheet" href="style.css">
 
     <title>Bootstrap Portfolio | Louiejie Gonzales</title>
-   
+   <!--Favicon-->
+   <link rel="icon" type="image/x-icon" href="favicon.ico/favicon.png">
 </head>
 <body id="home">
 
@@ -27,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm fixed-top p-2" style="background-color: #0c7eb7;">
         <div class="container">
             
-            <a class="navbar-brand" href="#"><strong>Louiejie</strong> Gonzales</a>
+            <a class="navbar-brand" href="#http://127.0.0.1:5500/index.html#home"><strong>Louiejie</strong> Gonzales</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,7 +61,12 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-        <img src="img/Louiejie.jpg" alt="Louiejie" width="240" class="rounded-circle img-thumbnail" >
+        <img src="img/Louiejie.jpg" alt="Gonzales, Louiejie A." width="240" class="rounded-circle img-thumbnail" id="myImg">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
         <h1 class="mt-1 display-4 text-white" >Louiejie Gonzales</h1>
         <p class="lead text-center text-white">Student</p>
         
@@ -115,7 +122,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="img/projects/calendar.png" class="card-img-top" alt="projects 1">
+                        <img src="img/projects/calendar.png" class="card-img-top" alt="projects 1" >
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -124,7 +131,7 @@
 
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="img/projects/iframe.png" class="card-img-top" alt="projects 2">
+                        <img src="img/projects/iframe.png" class="card-img-top" alt="projects 2"  >
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -133,7 +140,7 @@
 
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="img/projects/calendar 2.png" class="card-img-top" alt="projects 3">
+                        <img src="img/projects/calendar 2.png" class="card-img-top" alt="projects 3" >
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -141,7 +148,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="img/projects/calculator.png" class="card-img-top" alt="projects 4">
+                        <img src="img/projects/calculator.png" class="card-img-top" alt="projects 4" >
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
@@ -150,13 +157,14 @@
                 <div class="col-md-4 mb-3">
                     <div class="card">
                         <img src="img/projects/icon.png" class="card-img-top" alt="projects 5">
-                        <div class="card-body">
+                        <div class="card-body" >
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -218,7 +226,7 @@
         <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/batmangonzales/" target="https://www.instagram.com/batmangonzales/">Louiejie Gonzales</a></p>
     </footer>
     <!-- End Footer -->
-
+<script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
