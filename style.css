@@ -46,12 +46,50 @@ footer a:hover {
     text-decoration: none;
     padding: 0px 3px 0px 3px;
 }
-.card img:hover{
-    border-radius: 72% 28% 50% 50% / 39% 63% 37% 61% ;
-    box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 59px 0px rgba(0,0,0,0.75);
-   transform: scale(1.1);
+.card {
+  overflow: hidden;
+}
+.card  img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.card  img:hover{
+transform: scale(1.1);
+}
+.popup-image{
+  position: fixed;
+  top: 0; left: 0;
+  background: rgb(0,0,0, .9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+ .popup-image span{
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+  margin-top: 30px;
+}
+.popup-image img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 650px;
+  object-fit: cover;
+}
+@media(max-width:768px){
+  .popup-image img{
+      width: 95%;
+  }
 }
 #myImg {
     border-radius: 5px;
@@ -139,4 +177,5 @@ footer a:hover {
       width: 100%;
     }
   }
+
   

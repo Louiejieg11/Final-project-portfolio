@@ -18,3 +18,13 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+document.querySelectorAll('.card img').forEach(image =>{
+  image.onclick = () => {
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+});
+document.querySelector('.popup-image span').onclick = () => {
+  document.querySelector('.popup-image').style.display = 'none';
+}
